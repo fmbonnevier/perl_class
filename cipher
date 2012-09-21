@@ -1,0 +1,103 @@
+#!/usr/bin/perl
+
+%utoe = ();
+%etou = ();
+
+$utoe{"q"} = "AA";
+$utoe{"w"} = "AD";
+$utoe{"e"} = "AF";
+$utoe{"r"} = "AG";
+$utoe{"t"} = "AX";
+$utoe{"y"} = "DA";
+$utoe{"u"} = "DD";
+$utoe{"i"} = "DF";
+$utoe{"o"} = "DG";
+$utoe{"p"} = "DX";
+$utoe{"a"} = "FA";
+$utoe{"s"} = "FD";
+$utoe{"d"} = "FF";
+$utoe{"f"} = "FG";
+$utoe{"g"} = "FX";
+$utoe{"j"} = "GA";
+$utoe{"k"} = "GD";
+$utoe{"l"} = "GF";
+$utoe{"z"} = "GG";
+$utoe{"c"} = "GX";
+$utoe{"b"} = "XA";
+$utoe{"n"} = "XD";
+$utoe{"m"} = "XF";
+$utoe{"h"} = "XG";
+$utoe{"v"} = "XX";
+
+$etou{"AA"} = "q";
+$etou{"AD"} = "w";
+$etou{"AF"} = "e";
+$etou{"AG"} = "r";
+$etou{"AX"} = "t";
+$etou{"DA"} = "y";
+$etou{"DD"} = "u";
+$etou{"DF"} = "i";
+$etou{"DG"} = "o";
+$etou{"DX"} = "p";
+$etou{"FA"} = "a";
+$etou{"FD"} = "s";
+$etou{"FF"} = "d";
+$etou{"FG"} = "f";
+$etou{"FX"} = "g";
+$etou{"GA"} = "j";
+$etou{"GD"} = "k";
+$etou{"GF"} = "l";
+$etou{"GG"} = "z";
+$etou{"GX"} = "c";
+$etou{"XA"} = "b";
+$etou{"XD"} = "n";
+$etou{"XF"} = "m";
+$etou{"XG"} = "h";
+$etou{"XX"} = "v";
+
+
+$command = @ARGV[0];
+$input = @ARGV[1];
+
+
+if ($command eq "encrypt") {
+
+       @data = split(undef, $input);
+
+#       print "@data\n";
+#       print "Made it!\n";
+
+       print "The value is
+$utoe{@data[0]}$utoe{@data[1]}$utoe{@data[2]}$utoe{@data[3]}$utoe{@data[4]}$utoe{@data[5]}$utoe{@data[6]}$utoe{@data[7]}$utoe{@data[8]}$utoe{@data[9]}$utoe{@data[10]}$utoe{@data[11]}$utoe{@data[12]}$utoe{@data[13]}$utoe{@data[14]}$utoe{@data[15]}$utoe{@data[16]}$utoe{@data[17]}$utoe{@data[18]}$utoe{@data[19]}$utoe{@data[20]}$utoe{@data[21]}$utoe{@data[21]}$utoe{@data[22]}$utoe{@data[23]}$utoe{@data[24]}\n"
+
+
+#while (@data[0] ne "") {
+
+#	@data[0] eq @data[2];
+#	@data[2] eq @data[0];
+	
+#	print "Made it!\n";
+
+#	print "$etou{@data[0]}\n";
+#	print "$etou{@data[2]}\n";
+	
+	
+#	}
+
+}
+
+
+
+elsif ($command eq "decrypt") {
+
+       @data = ($input =~ m/../g );
+
+#       print "@data\n";
+#       print "Made it!\n";
+#       print "@data[0] and @data[1] and @data[2] and @data[3] \n";
+
+
+       print "The value is
+$etou{@data[0]}$etou{@data[1]}$etou{@data[2]}$etou{@data[3]}$etou{@data[4]}$etou{@data[5]}$etou{@data[6]}$etou{@data[7]}$etou{@data[8]}$etou{@data[9]}$etou{@data[10]}$etou{@data[11]}$etou{@data[12]}$etou{@data[13]}$etou{@data[14]}$etou{@data[15]}$etou{@data[16]}$etou{@data[17]}$etou{@data[18]}$etou{@data[19]}$etou{@data[20]}$etou{@data[21]}$etou{@data[21]}$etou{@data[22]}$etou{@data[23]}$etou{@data[24]}\n"
+
+}

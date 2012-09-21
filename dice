@@ -1,0 +1,16 @@
+#!/usr/bin/perl
+
+print "What year were you born, buddy?\n";
+$year = <>;
+$age = 2012 - $year;
+
+if ($age > 21) {
+	print "Drink some beers!\n";
+} else {
+	print "Beat it scabby 'bos!\n";
+} if ($age == 20) {
+	print "Only one year to go!\n";
+} else {
+	print "Beat it, scab!\n";
+}
+
